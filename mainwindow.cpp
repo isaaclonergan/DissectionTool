@@ -939,8 +939,12 @@ void MainWindow::on_Mode_clicked()
 {
     if (ui->Mode->isChecked() == false) {
         ui->Mode->setText("Current Mode:\nRegular");
+        std::cout << "Challenge Mode Disabled" << std::endl << std::endl;
+        s.set_challengeMode(false);
     } else {
         ui->Mode->setText("Current Mode:\nChallenge");
+        std::cout << "Challenge Mode Enabled" << std::endl << std::endl;
+        s.set_challengeMode(true);
     }
 }
 

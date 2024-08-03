@@ -238,33 +238,36 @@ std::string dissections::dissection() {
     }
 
     std::string out = "";
-    if (current_max != 0) {
-        std::cout << "Starting Swaps" << std::endl;
-        out.append(find_swaps(initial_values, permutations[max_index]));
-        std::cout << "Swaps Complete" << std::endl << std::endl;
+    if (this->challengeMode == false) {
+        if (current_max != 0) {
+            std::cout << "Starting Swaps" << std::endl;
+            out.append(find_swaps(initial_values, permutations[max_index]));
+            std::cout << "Swaps Complete" << std::endl << std::endl;
+        } else if (this->selected[3] != this->selected[4] && this->selected[4] != this->selected[5] && this->selected[3] != this->selected[5]) {
+            out.append(format_output(initial_values, 0));
+            out.append(format_output(initial_values, 2));
+            out.append("\n");
+            out.append(format_output(initial_values, 1));
+            out.append(format_output(initial_values, 4));
+            out.append("\n");
+            out.append(format_output(initial_values, 3));
+            out.append(format_output(initial_values, 5));
+        } else {
+            out.append("Unsupported Input");
+        }
     } else {
-        out.append(format_output(initial_values, 0));
-        out.append(format_output(initial_values, 2));
-        out.append("\n");
-        out.append(format_output(initial_values, 1));
-        out.append(format_output(initial_values, 4));
-        out.append("\n");
-        out.append(format_output(initial_values, 3));
-        out.append(format_output(initial_values, 5));
+        std::vector<int> solution;
+        solution.push_back(this->selected[2]);
+        solution.push_back(this->selected[2]);
+        solution.push_back(this->selected[0]);
+        solution.push_back(this->selected[0]);
+        solution.push_back(this->selected[1]);
+        solution.push_back(this->selected[1]);
+        std::cout << "Starting Swaps -- Challenge" << std::endl;
+        out.append(find_swaps(initial_values, solution));
+        std::cout << "Swaps Complete" << std::endl << std::endl;
     }
 
-    //output section
-    /*
-    for (int i = 0; i < permutations.size(); i++) {
-        for (int j = 0; j < 6; j++) {
-            if (i != 0 && j == 0) {
-                out.append("\n");
-            }
-            out.append(std::to_string(permutations[i][j]));
-            out.append(" ");
-        }
-    }
-    */
     return out;
 }
 \

@@ -83,13 +83,13 @@
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -105,7 +105,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;MIDDLE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -204,13 +204,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -226,7 +226,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;LEFT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -286,13 +286,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -308,7 +308,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;RIGHT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -354,7 +354,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <item row="1" column="7">
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
+        <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -394,13 +394,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -416,7 +416,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;MIDDLE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -449,7 +449,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <item row="1" column="3">
       <spacer name="horizontalSpacer">
        <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
+        <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -580,13 +580,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -602,7 +602,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;RIGHT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -662,13 +662,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <bool>false</bool>
        </property>
        <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="lineWrapMode">
-        <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+        <enum>QTextEdit::NoWrap</enum>
        </property>
        <property name="readOnly">
         <bool>true</bool>
@@ -684,7 +684,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;LEFT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+        <set>Qt::NoTextInteraction</set>
        </property>
       </widget>
      </item>
@@ -743,7 +743,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <item row="2" column="1">
       <spacer name="verticalSpacer">
        <property name="orientation">
-        <enum>Qt::Orientation::Vertical</enum>
+        <enum>Qt::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -782,7 +782,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </property>
     <property name="plainText">
      <string>Created by eyegak.
-Currently no challenge mode, button does nothing</string>
+Challenge Mode Needs Review</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Mode">
