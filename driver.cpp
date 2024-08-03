@@ -2,7 +2,12 @@
 #include <iostream>
 
 std::string format_output(std::vector<int> initial, int idx) {
+    /*
+     * Format the output given the vector with the initial values and an index
+    */
+
     std::string output;
+
     output.append("Dissect ");
     switch (initial[idx]) {
     case 1:
@@ -49,12 +54,7 @@ std::string dissections::find_swaps(std::vector<int> initial, std::vector<int> c
     int start;
     int count = 0;
 
-    /*
-     * 1 : Left
-     * 2 : Center
-     * 3 : Right
-    */
-    int tmp1_location;
+
     for (int k = 0; k < 6; k++) {
         std::cout << comparison[k] << " ";
     }
@@ -157,6 +157,7 @@ std::string dissections::dissection() {
         shape_3d[i] = 0;
         initial_values.push_back(0);
     }
+
     //sphere cylinder cone
     for (int i = 0; i < 3; i++) {
         switch(this->selected[3+i]) {
@@ -192,10 +193,9 @@ std::string dissections::dissection() {
     }
 
     std::vector<std::vector<int>> permutations;
+
     int n = sizeof(shape_3d) / sizeof(int);
-
     std::sort(shape_3d, shape_3d+n);
-
     do {
         if (shape_3d[0] != selected[0] && shape_3d[1] != selected[0] && shape_3d[2] != selected[1] && shape_3d[3] != selected[1] && shape_3d[4] != selected[2] && shape_3d[5] != selected[2]) {
             std::vector<int> temporary;
@@ -206,6 +206,14 @@ std::string dissections::dissection() {
         }
     } while (std::next_permutation(shape_3d,shape_3d+n));
 
+    //filter out perfect shapes
+    for (int i = 0; i < permutations.size(); i++) {
+        if (permutations[i][0] == permutations[i][1] || permutations[i][2] == permutations[i][3] || permutations[i][4] == permutations[i][5]) {
+            for (int j = 0; j < 6; j++) {
+                permutations[i][j] = 0;
+            }
+        }
+    }
 
     //assign similarity values
     std::vector<int> comparison_values;
@@ -231,10 +239,9 @@ std::string dissections::dissection() {
 
     std::string out = "";
     if (current_max != 0) {
-        //out.append("Comparison score ");
-        //out.append(std::to_string(current_max));
-        //out.append("\n");
+        std::cout << "Starting Swaps" << std::endl;
         out.append(find_swaps(initial_values, permutations[max_index]));
+        std::cout << "Swaps Complete" << std::endl << std::endl;
     } else {
         out.append(format_output(initial_values, 0));
         out.append(format_output(initial_values, 2));
