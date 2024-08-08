@@ -9,8 +9,13 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
+find_package(Threads REQUIRED)
+find_package(zstd)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -44,9 +49,8 @@ else()
     endif()
 endif()
 
-set(THREADS_PREFER_PTHREAD_FLAG ON)
-find_package(Threads REQUIRED)
-target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Threads::Threads -static -static-libgcc -static-libstdc++)
+
+target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Threads::Threads zstd::libzstd_static -static-libgcc -static-libstdc++)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
