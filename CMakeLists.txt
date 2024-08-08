@@ -50,7 +50,7 @@ else()
 endif()
 
 
-target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Threads::Threads zstd::libzstd_static -static-libgcc -static-libstdc++)
+target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Threads::Threads zstd::libzstd_static -static -static-libgcc -static-libstdc++)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
