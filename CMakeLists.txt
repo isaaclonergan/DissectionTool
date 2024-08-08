@@ -44,7 +44,9 @@ else()
     endif()
 endif()
 
-target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets -static-libgcc -static-libstdc++ )
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(DissectionTool PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Threads::Threads -static -static-libgcc -static-libstdc++)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
