@@ -109,9 +109,9 @@
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>100</red>
-        <green>100</green>
-        <blue>100</blue>
+        <red>70</red>
+        <green>70</green>
+        <blue>70</blue>
        </color>
       </brush>
      </colorrole>
@@ -255,9 +255,9 @@
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>100</red>
-        <green>100</green>
-        <blue>100</blue>
+        <red>70</red>
+        <green>70</green>
+        <blue>70</blue>
        </color>
       </brush>
      </colorrole>
