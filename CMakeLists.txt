@@ -32,6 +32,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${app_icon_resource_windows}
         driver.h
         driver.cpp
+        DissectionTool.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET DissectionTool APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
