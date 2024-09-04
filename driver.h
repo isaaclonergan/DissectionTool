@@ -43,5 +43,7 @@ public:
     void remove_shape(int);
     void select(int, dissections*);
     int get_selected();
+    void disable(int);
+    void enable(int);
 };
 #endif // DRIVER_H

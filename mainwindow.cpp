@@ -65,7 +65,6 @@ void MainWindow::on_b_LTriangle_clicked()
         in_m.select(0, &s);
         in_r.select(0, &s);
     }
-
     in_l.select(1, &s);
 
     if (in_m.get_selected() == 2 && in_r.get_selected() == 0) {

@@ -263,6 +263,7 @@ std::string dissections::dissection() {
         solution.push_back(this->selected[0]);
         solution.push_back(this->selected[1]);
         solution.push_back(this->selected[1]);
+
         std::cout << "Starting Swaps -- Challenge" << std::endl;
         out.append(find_swaps(initial_values, solution));
         std::cout << "Swaps Complete" << std::endl << std::endl;
@@ -270,19 +271,6 @@ std::string dissections::dissection() {
 
     return out;
 }
-\
-/*
-     * 0 : undefined
-     * 1 : triangle
-     * 2 : circle
-     * 3 : square
-     * 4 : sphere
-     * 5 : cube
-     * 6 : pyramid
-     * 7 : cylinder
-     * 8 : prism
-     * 9 : cone
-*/
 
 button_segment::button_segment() {
     shapes.reserve(0);
@@ -318,3 +306,40 @@ void button_segment::select(int idx, dissections* s) {
 int button_segment::get_selected() {
     return this->selected;
 }
+
+void button_segment::disable(int idx) {
+    if (idx >= 0 && idx < this->shapes.size()) {
+        this->shapes[idx]->setDisabled(true);
+    }
+}
+
+void button_segment::enable(int idx) {
+    if (idx >= 0 && idx <= this->shapes.size()) {
+        this->shapes[idx]->setDisabled(false);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
